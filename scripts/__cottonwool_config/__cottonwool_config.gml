@@ -1,0 +1,2 @@
+#macro COTTONWOOL_VERBOSE    true
+#macro COTTONWOOL_CALLSTACK  true
