@@ -12,7 +12,7 @@ Cottonwool is a simple drop-in utility to help you take care of surface memory i
 
 &nbsp;
 
-Cottonwool can be run into one of two modes: **garbage collection mode** and **test mode**.
+Cottonwool can be run into one of two modes: **garbage collection mode** and **test mode**. In garbage collection mode, any surfaces you accidentally leave hanging around will be cleaned up for you, stopping memory leaks from occurring. In test mode, instead of clearing up memory leaks, Cottonwool will alert you to the problem with an error message so you can decide how best to solve it yourself.
 
 Using Cottonwool to garbage collect surfaces is extremely easy:
 1. Import the [latest package](https://github.com/JujuAdams/Cottonwool/releases/) into your project
@@ -25,6 +25,8 @@ That's everything! You don't need to write any other code, just make sure `cotto
 Automatic garbage collection isn't to everyone's taste though, and there is a slight performance overhead when using Cottonwool to garbage collect surfaces. If you'd like to use Cottonwool to simply assist you with finding memory leaks rather than solving them for you, hop into `__cottonwool_config()` and set `COTTONWOOL_TEST_MODE` to `true`. This will now instruct Cottonwool to show an error every time a reference to a surface is lost without that surface being freed by an explicit call to `surface_free()`.
 
 &nbsp;
+
+-----
 
 Cottonwool also comes with a handful of functions that return extra data about the surfaces in your game:
 
