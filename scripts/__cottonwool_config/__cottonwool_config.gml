@@ -13,5 +13,9 @@
 //This'll make it much easier to track down where surfaces are being created, but should be set to <false> for public release
 #macro COTTONWOOL_CALLSTACK  true
 
+//How many surface references to check every frame
+//Lower values are more performant, higher values will clean up surfaces sooner
+#macro COTTONWOOL_ITERATION_SIZE  10
+
 //Don't set this to <false> unless you have to!
 #macro COTTONWOOL_WARNING_VIEW_SURFACE  true
