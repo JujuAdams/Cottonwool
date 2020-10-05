@@ -14,6 +14,8 @@ Cottonwool is a simple drop-in utility to help you take care of surface memory i
 
 Cottonwool can be run into one of two modes: **garbage collection mode** and **test mode**. In garbage collection mode, any surfaces you accidentally leave hanging around will be cleaned up for you, stopping memory leaks from occurring. In test mode, instead of clearing up memory leaks, Cottonwool will alert you to the problem with an error message so you can decide how best to solve it yourself.
 
+&nbsp;
+
 Using Cottonwool to garbage collect surfaces is extremely easy:
 1. Import the [latest package](https://github.com/JujuAdams/Cottonwool/releases/) into your project
 2. Excute `cottonwool_update()` in a controller object's Step event
