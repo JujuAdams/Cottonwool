@@ -20,7 +20,7 @@ Using Cottonwool to garbage collect surfaces is extremely easy:
 1. Import the [latest package](https://github.com/JujuAdams/Cottonwool/releases/) into your project
 2. Excute `cottonwool_update()` in a controller object's Step event
 
-That's everything! You don't need to write any other code, just make sure `cottonwool_update()` is being run every frame by an object.
+That's everything! You don't need to write any other code whatsoever - nothing - just make sure `cottonwool_update()` is being run every frame by an object.
 
 &nbsp;
 
