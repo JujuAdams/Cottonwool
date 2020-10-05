@@ -28,24 +28,28 @@ Automatic garbage collection isn't to everyone's taste though, and there is a sl
 
 &nbsp;
 
+`__cottonwool_config()` can be customised to suit your tastes, including verbose messages that log when surface references are created and lost, and how much information to store for each surface Cottonwool is tracking. Cottonwool itself can be toggled too off, should you so wish.
+
+&nbsp;
+
 -----
 
 Cottonwool also comes with a handful of functions that return extra data about the surfaces in your game:
 
 &nbsp;
 
-### cottonwool_get_number() ###
+### `cottonwool_get_number()` ###
 
 Returns the number of surface being tracked by Cottonwool
 
 &nbsp;
 
-### cottonwool_get_memory() ###
+### `cottonwool_get_memory()` ###
 
 Returns the *approximate* amount of texture memory (in bytes) allocated to surfaces being tracked by Cottonwool
 
 &nbsp;
 
-### cottonwool_get_array(inclusive) ###
+### `cottonwool_get_array(inclusive)` ###
 
 Returns an array that contains structs for all surfaces being tracked by Cottonwool. If `inclusive` is set to `true` then surfaces that don't exist will be included in the array, otherwise they will be ignored.
