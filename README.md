@@ -40,7 +40,7 @@ Cottonwool also comes with a handful of functions that return extra data about t
 
 ### `cottonwool_get_number()` ###
 
-Returns the number of surface being tracked by Cottonwool
+Returns the number of surfaces being tracked by Cottonwool
 
 &nbsp;
 
