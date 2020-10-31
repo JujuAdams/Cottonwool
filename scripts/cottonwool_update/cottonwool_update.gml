@@ -15,13 +15,17 @@ function cottonwool_update()
             else
             {
                 var _surface = global.__cottonwool_meta[_i].surface;
-                if (__surface_exists(_surface))
-                {
-                    __surface_free(_surface);
-                    if (COTTONWOOL_TEST_MODE) show_error("Cottonwool:\nLost reference to surface that still exists\n \n" + string(global.__cottonwool_meta[_i]) + "\n ", false);
-                }
                 
-                if (COTTONWOOL_VERBOSE) __cottonwool_trace("Lost reference: ", global.__cottonwool_meta[_i]);
+                if (_surface != application_surface) //Never try to free the application surface
+                {
+                    if (__surface_exists(_surface))
+                    {
+                        __surface_free(_surface);
+                        if (COTTONWOOL_TEST_MODE) show_error("Cottonwool:\nLost reference to surface that still exists\n \n" + string(global.__cottonwool_meta[_i]) + "\n ", false);
+                    }
+                    
+                    if (COTTONWOOL_VERBOSE) __cottonwool_trace("Lost reference: ", global.__cottonwool_meta[_i]);
+                }
                 
                 array_delete(global.__cottonwool_structs, _i, 1);
                 array_delete(global.__cottonwool_meta, _i, 1);
@@ -409,7 +413,7 @@ function __cottonwool_find_surface(_surface, _create_new)
     var _i = 0;
     repeat(array_length(global.__cottonwool_structs))
     {
-        if (global.__cottonwool_structs[_i].surface == _surface) return global.__cottonwool_structs[_i];
+        if (global.__cottonwool_structs[_i].ref.surface == _surface) return global.__cottonwool_structs[_i].ref;
         ++_i;
     }
     
