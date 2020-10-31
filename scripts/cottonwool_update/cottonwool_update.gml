@@ -389,8 +389,8 @@ global.__cottonwool_structs = [];
 global.__cottonwool_meta = [];
 global.__cottonwool_test_index = 0;
 
-#macro __COTTONWOOL_VERSION   "1.0.0"
-#macro __COTTONWOOL_DATE      "2020-10-05"
+#macro __COTTONWOOL_VERSION   "1.0.1"
+#macro __COTTONWOOL_DATE      "2020-10-31"
 
 __cottonwool_trace("Welcome to Cottonwool by @jujuadams! This is version " + __COTTONWOOL_VERSION + ", " + __COTTONWOOL_DATE);
 
