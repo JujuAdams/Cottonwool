@@ -30,6 +30,15 @@ function cottonwool_update()
                 array_delete(global.__cottonwool_structs, _i, 1);
                 array_delete(global.__cottonwool_meta, _i, 1);
                 --_size;
+                
+                if (_size > 0)
+                {
+                    _i = _i mod _size;
+                }
+                else
+                {
+                    _i = 0;
+                }
             }
         }
         
