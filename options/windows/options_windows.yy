@@ -1,7 +1,7 @@
 {
   "option_windows_display_name": "Cottonwool",
   "option_windows_executable_name": "${project_name}.exe",
-  "option_windows_version": "1.0.2.0",
+  "option_windows_version": "1.0.3.0",
   "option_windows_company_info": "Juju Adams",
   "option_windows_product_info": "Cottonwool",
   "option_windows_copyright_info": "@jujuadams 2020",
