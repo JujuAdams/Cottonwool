@@ -422,7 +422,8 @@ function __cottonwool_find_surface(_surface, _create_new)
     var _i = 0;
     repeat(array_length(global.__cottonwool_structs))
     {
-        if (global.__cottonwool_structs[_i].ref.surface == _surface) return global.__cottonwool_structs[_i].ref;
+        var _weak = global.__cottonwool_structs[_i];
+        if (weak_ref_alive(_weak) && (_weak.ref.surface == _surface)) return _weak.ref;
         ++_i;
     }
     
