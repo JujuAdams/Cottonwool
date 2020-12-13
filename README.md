@@ -1,4 +1,4 @@
-<h1 align="center">Cottonwool 1.0.0</h1>
+<h1 align="center">Cottonwool 1.0.3</h1>
 
 <p align="center">Safe surfaces for GameMaker Studio 2.3.1</p>
 
