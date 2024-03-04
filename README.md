@@ -2,9 +2,7 @@
 
 <p align="center">Safe surfaces for GameMaker Studio 2.3.1</p>
 
-<p align="center">By <b>@jujuadams</b>, with thanks to <b>shdwcat</b> for helping to test this library</p>
-
-<p align="center">Chat about Cottonwool on the <a href="https://discord.gg/8krYCqr">Discord server</a></p>
+<p align="center">By <b>Juju Adams</b>, with thanks to <b>shdwcat</b> for helping to test this library</p>
 
 &nbsp;
 
